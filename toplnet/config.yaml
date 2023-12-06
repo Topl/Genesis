@@ -1,7 +1,7 @@
 bifrost:
   big-bang:
     type: public
-    genesis-id: b_9ry5ZcSpRtcTB1p6rcQLeYCYMkFW4Q6oRqAbSShC57RZ
+    genesis-id: b_CScnuBgGUigEPZgXthMP6LYoDpx34dVk1XwY7TLKfpVD
     source-path: https://raw.githubusercontent.com/Topl/Genesis/main/toplnet
   p2p:
     network-properties:
