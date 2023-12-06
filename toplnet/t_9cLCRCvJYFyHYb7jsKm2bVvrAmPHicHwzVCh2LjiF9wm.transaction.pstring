@@ -1,0 +1,91 @@
+outputs {
+  address {
+    network: 2316371276
+    ledger: 3887102464
+    id {
+      value: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+    }
+  }
+  value {
+    updateProposal {
+      label: "genesis"
+      fEffective {
+        numerator {
+          value: "\003"
+        }
+        denominator {
+          value: "\031"
+        }
+      }
+      vrfLddCutoff {
+        value: 15
+      }
+      vrfPrecision {
+        value: 40
+      }
+      vrfBaselineDifficulty {
+        numerator {
+          value: "\001"
+        }
+        denominator {
+          value: "\024"
+        }
+      }
+      vrfAmplitude {
+        numerator {
+          value: "\001"
+        }
+        denominator {
+          value: "\002"
+        }
+      }
+      chainSelectionKLookback {
+        value: 5184
+      }
+      slotDuration {
+        seconds: 1
+        nanos: 0
+      }
+      forwardBiasedSlotWindow {
+        value: 50
+      }
+      operationalPeriodsPerEpoch {
+        value: 25
+      }
+      kesKeyHours {
+        value: 9
+      }
+      kesKeyMinutes {
+        value: 9
+      }
+    }
+  }
+}
+outputs {
+  address {
+    network: 2316371276
+    ledger: 3887102464
+    id {
+      value: "\334\363\356\222\206r\375\270\246\240\344\337Mk\257gls\227\252T\022\262D\210;e?\033\211\334&"
+    }
+  }
+  value {
+    lvl {
+      quantity {
+        value: "\b\312k\377"
+      }
+    }
+  }
+}
+datum {
+  event {
+    schedule {
+      min: 0
+      max: 0
+      timestamp: 1701898295154
+    }
+    metadata {
+      value: ""
+    }
+  }
+}
