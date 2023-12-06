@@ -72,7 +72,7 @@ outputs {
   value {
     lvl {
       quantity {
-        value: "\b\312k\377"
+        value: "\377\377\377"
       }
     }
   }
@@ -82,7 +82,7 @@ datum {
     schedule {
       min: 0
       max: 0
-      timestamp: 1701898295154
+      timestamp: 1701903006443
     }
     metadata {
       value: ""
