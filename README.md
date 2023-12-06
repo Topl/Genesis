@@ -4,11 +4,11 @@ This repository contains data files which encode "genesis" blocks for Topl's mai
 ## Structure
 This repository contains a genesis block and a sample configuration file.
 - `README.md`
-- `genesis/`
-- `config.yaml`
+- `toplnet/`
+- `toplnet/config.yaml`
 
 ### Genesis structure
-Within the `genesis` directory, a genesis block is encoded using protobuf in a normalized structure.  The contents should include:
+Within the `toplnet` directory, a genesis block is encoded using protobuf in a normalized structure.  The contents should include:
 - `{blockId}.header.pbuf`
   - A protobuf-encoded BlockHeader file, where `{blockId}` is the ID of the genesis block
 - `{blockId}.body.pbuf`
@@ -30,6 +30,6 @@ A Bifrost node can be configured to point to this repository for its genesis con
 bifrost:
   big-bang:
     type: public
-    genesis-id: b_6D8mXdqjsGrJbnXf6PqfWQrdTfKr3U5nbLGJGyYVgjqs
-    source-path: https://raw.githubusercontent.com/Topl/Genesis/main/genesis/
+    genesis-id: b_9ry5ZcSpRtcTB1p6rcQLeYCYMkFW4Q6oRqAbSShC57RZ
+    source-path: https://raw.githubusercontent.com/Topl/Genesis/main/toplnet
 ```
