@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  node:
+    image: toplprotocol/bifrost-node:latest
+    command: --config https://raw.githubusercontent.com/Topl/Genesis/main/toplnet/config.yaml --knownPeers toplnet.topl.co:9085
+    restart: unless-stopped
+    ports:
+      - "9084:9084"
+      - "9085:9085"
+    volumes:
+      - bifrost-data:/bifrost
+      - bifrost-staking:/bifrost-staking
+  node-rpc-grpc-web-proxy:
+    image: scarmuega/grpcwebproxy
+    restart: unless-stopped
+    command: --backend_addr=node:9084 --run_tls_server=false --allow_all_origins 
+    depends_on:
+      - node
+    ports:
+      - "9086:8080"
+volumes:
+  bifrost-data:
+  bifrost-staking:
